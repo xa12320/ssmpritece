@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>小夏学抓哇博客 | Login</title>
+
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/font-awesome/css/font-awesome.css}" rel="stylesheet">
+    <link th:href="@{/css/animate.css}" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+<body class="gray-bg">
+<div class="middle-box text-center loginscreen animated fadeInDown">
+    <div>
+        <div>
+            <h1 class="logo-name">X</h1>
+        </div>
+        <h3>欢迎登录小夏学抓哇的博客管理后台</h3>
+
+        <form class="m-t" role="form" th:action="@{/enter}" method = "post">
+            <div class="form-group">
+                <input name="username" type="text" class="form-control" placeholder="Username" required="">
+            </div>
+            <div class="form-group">
+                <input name="password" type="password" class="form-control" placeholder="Password" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">登录</button>
+
+
+        </form>
+        <p class="m-t"> <small>小夏学抓哇 &copy; 2023</small> </p>
+    </div>
+</div>
+<!-- Mainly scripts -->
+<script th:src="@{/js/jquery-2.1.1.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace要和mapper接口的全类名保持一致,路径 + 接口类名-->
+<!--sql语句的id要和mapper接口中的方法名保持一致-->
+
+<mapper namespace="com.myblog.mapper.LoginMapper">
+
+    <!--User userLogin(User user);-->
+    <select id="userLogin" resultType="user">
+        select * from user where username=#{username} and password=#{password}
+    </select>
+
+</mapper>

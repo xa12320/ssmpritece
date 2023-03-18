@@ -1,6 +1,6 @@
 package com.study.house.services;
 
-import com.study.house.pojo.HouseInfo;
+import com.study.house.pojo.*;
 
 import java.util.List;
 
@@ -12,4 +12,22 @@ import java.util.List;
 public interface HouseService {
 
     List<HouseInfo> getHouseNum();
+
+    List<HousePeople> getHousePeople();
+
+    List<HouseCount> getHouseCount();
+
+    List<HouseMerit> getHouseMerit();
+
+    List<String> getNorms(String city);
+
+    List<Double> getHouseData(String city);
+
+    List<String> getHOuseCity();
+
+    List<HouseArea> getHouseAreaCount();
+
+    List<String> getHouseTotalCity();
+
+    List<Integer> getHouseTotal();
 }

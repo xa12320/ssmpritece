@@ -9,4 +9,51 @@
     <select id="getHouseInfo" resultType="HouseInfo">
         SELECT city,number,house_info FROM tb_houseinfo  ORDER BY city;
     </select>
+
+    <!--List<HousePeople> getHousePeople();-->
+    <select id="getHousePeople" resultType="HousePeople">
+        SELECT city,number FROM tb_housepeople;
+    </select>
+
+    <!--List<HouseCount> getHouseCount();-->
+    <select id="getHouseCount" resultType="HouseCount">
+        SELECT city,number FROM tb_housecount;
+    </select>
+
+    <!-- List<HouseMerit> getHouseMerit();-->
+    <select id="getHouseMerit" resultType="HouseMerit">
+        SELECT * FROM tb_house_merit;
+    </select>
+
+    <!--List<HouseNorms> getNorms();-->
+    <select id="getNorms" resultType="java.lang.String">
+        SELECT info FROM tb_house_norms WHERE city = #{city};
+    </select>
+
+<!--    List<Double> getHouseData(@Param("city") String city);-->
+    <select id="getHouseData" resultType="java.lang.Double">
+        SELECT num FROM tb_house_norms WHERE city = #{city};
+    </select>
+
+    <!--List<HouseNorms> getHOuseCity();-->
+    <select id="getHOuseCity" resultType="java.lang.String">
+        SELECT  DISTINCT city FROM tb_house_norms;
+    </select>
+
+    <!--List<HouseArea> getHouseAreaCount();-->
+    <select id="getHouseAreaCount" resultType="HouseArea">
+        select * from tb_house_region;
+    </select>
+
+    <!--List<HouseTotal> getHouseTotalCity();-->
+    <select id="getHouseTotalCity" resultType="java.lang.String">
+        SELECT city
+        FROM tb_house_total;
+    </select>
+
+    <!--List<HouseTotal> getHouseTotal();-->
+    <select id="getHouseTotal" resultType="java.lang.Integer">
+        SELECT total
+        FROM tb_house_total;
+    </select>
 </mapper>

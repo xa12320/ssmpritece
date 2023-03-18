@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
         <meta charset="utf-8">
-        <title>二手房统计可视化</title>
+        <title>二手商品房交易可视化平台</title>
         <script  th:src="@{/js/jquery.js}"></script>
         <script type="text/javascript" th:src="@{/js/echarts.min.js}"></script>
     <script language="JavaScript" th:src="@{/js/js.js}"></script>
@@ -14,7 +14,7 @@
           <div class="loadbox"> <img th:src="@{/images/loading.gif}"> 页面加载中... </div>
         </div>
         <div class="head">
-          <h1>二手房统计可视化</h1>
+          <h1>二手商品房交易可视化平台</h1>
           <div class="time" id="showTime">2019/12/05 16:16:54</div>
                 <script>
         var t = null;
@@ -51,42 +51,18 @@
                 </div>
               </div>
               <div class="boxall" style="height: calc(42% - .15rem)">
-                  <div class="alltitle">标题名称4</div>
+                  <div class="alltitle">统计二手房关注人数与房子数量</div>
                   <div class="boxnav" id="echarts3"></div>
                 </div>
             </li>
             <li>
-                <div class="boxall" style="height: calc(20% - .15rem);text-align: center;font-size: 20px;">房子数量top3
-                   <ul class="row h100 clearfix">
-                    <li class="col-6">
-                        <h3>房子数量</h3>
-                           <h1><span>30500</span>万</h1>
-                     </li>
-                    <li class="col-6">
-                        <ul class="row h100 clearfix">
-                            <li class="col-4">
-                              <div class="tit01">标题名称</div>
-                              <div class="piebox" id="pe01"></div>
-                            </li>
-                            <li class="col-4">
-                              <div class="tit01">标题名称</div>
-                              <div class="piebox" id="pe02"></div>
-                            </li>
-                            <li class="col-4">
-                              <div class="tit01">标题名称</div>
-                              <div class="piebox" id="pe03"></div>
-                            </li>
-                           </ul>
 
-                    </li>
-                   </ul>
-                  </div>
-                  <div class="boxall" style="height: calc(38% - .15rem)">
-                    <div class="alltitle">标题名称</div>
+                  <div class="boxall" style="height: calc(58% - .15rem)">
+                    <div class="alltitle">统计二手房优势的各类比例</div>
                       <div class="boxnav" id="echarts1"></div>
                     </div>
                     <div class="boxall" style="height: calc(42% - .15rem)">
-                      <div class="alltitle">标题名称</div>
+                      <div class="alltitle">二手房各类规格比例</div>
                         <div class="boxnav" id="echarts2"></div>
                       </div>
 
@@ -95,52 +71,51 @@
 
                 <div class="boxall" style="height: calc(33.333% - .15rem)">
 
-                    <div class="alltitle">标题名称</div>
+                    <div class="alltitle">面积区间范围的房子数量</div>
                     <div class="boxnav" id="echarts5"></div>
 
               </div>
               <div class="boxall" style="height: calc(33.333% - .15rem)">
-                <div class="alltitle">标题名称</div>
+                <div class="alltitle">各类标签占比</div>
                 <div class="boxnav" id="">
-        <table border="0" cellspacing="0">
-          <tr>
-            <th></th>
-            <th>字段</th>
-            <th>字段</th>
-            <th>字段</th>
-            <th>字段</th>
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <th></th>
+                            <th>必看好房</th>
+                            <th>房主自荐</th>
+                            <th>新上</th>
+                            <th>未知标签</th>
 
-          </tr>
-          <tr>
-            <th>字段</th>
-            <td>8098</td>
-            <td>19.80%</td>
-            <td>22</td>
-            <td>368</td>
-          </tr>
-          <tr>
-            <th>字段</th>
-            <td>7506</td>
-            <td>6.70%</td>
-            <td>22</td>
-            <td>339</td>
-          </tr>
-          <tr>
-            <th>字段</th>
-            <td>3261</td>
-            <td>32.30%</td>
-            <td>10</td>
-            <td>325.7</td>
-          </tr>
-          <tr>
-            <th>字段</th>
-            <td>1993</td>
-            <td>	201%</td>
-            <td>10</td>
-            <td>	199</td>
-          </tr>
-        </table>
-
+                        </tr>
+                        <tr>
+                            <th>上海</th>
+                            <td>16.93%</td>
+                            <td>16.06%</td>
+                            <td>10.35%</td>
+                            <td>56.66%</td>
+                        </tr>
+                        <tr>
+                            <th>北京</th>
+                            <td>76.14%</td>
+                            <td>4.74%</td>
+                            <td>1.45%</td>
+                            <td>17.66%</td>
+                        </tr>
+                        <tr>
+                            <th>广州</th>
+                            <td>13.00%</td>
+                            <td>3.26%</td>
+                            <td>17.56%</td>
+                            <td>66.17%</td>
+                        </tr>
+                        <tr>
+                            <th>深圳</th>
+                            <td>9.22%</td>
+                            <td>	2.18%</td>
+                            <td>4.63%</td>
+                            <td>	83.97%</td>
+                        </tr>
+                    </table>
 
 
 
@@ -149,7 +124,7 @@
 
               </div>
               <div class="boxall" style="height: calc(33.333% - .15rem)">
-                <div class="alltitle">标题名称</div>
+                <div class="alltitle">关注城市的总房数量</div>
                 <div class="boxnav" id="echarts6" style="height:calc(100% - .3rem);"></div>
               </div>
             </li>

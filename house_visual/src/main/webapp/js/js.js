@@ -26,7 +26,7 @@ $(function () {
     pe03()
 
 function echarts_1() {
-        $.get("http://localhost:8080/house/houseMerit",function (data){
+        $.get("http://47.120.14.95:8080/houseMerit",function (data){
             var sh = data.sh;
             var bj = data.bj;
             var gz = data.gz;
@@ -156,7 +156,7 @@ function echarts_1() {
         });
 }
 function echarts_2() {
-        $.get("http://localhost:8080/house/houseNorms",function (data){
+        $.get("http://47.120.14.95:8080/houseNorms",function (data){
             var city = data.citys;
             var infos = data.info;
             var sh = data.sh;
@@ -397,7 +397,7 @@ function echarts_2() {
         });
 }
     function echarts_3() {
-        $.get("http://localhost:8080/house/housePC",function (data){
+        $.get("http://47.120.14.95:8080/housePC",function (data){
             var city = data.citys;
             var pc = data.peocount;
             var houseCount = data.housec;
@@ -507,7 +507,7 @@ function echarts_2() {
 
     }
     function echarts_5() {
-        $.get("http://localhost:8080/house/area",function (data){
+        $.get("http://47.120.14.95:8080/area",function (data){
             var scope = data.scope;
             var city = data.citys;
             var numsh = data.sh;
@@ -634,7 +634,7 @@ function echarts_2() {
     function echarts_4() {
      // 基于准备好的dom，初始化echarts实例
 
-        $.get("http://localhost:8080/house/houseinfo",function (data){
+        $.get("http://47.120.14.95:8080/houseinfo",function (data){
             var ngz = data.gz;
             var nsh = data.sh;
             var nsz = data.sz;
@@ -753,7 +753,7 @@ function echarts_2() {
 
   }
   function echarts_6() {
-        $.get("http://localhost:8080/house/total",function (data){
+        $.get("http://47.120.14.95:8080/total",function (data){
            var sh = data.citys[0];
            var sz = data.citys[1];
            var gz = data.citys[2];

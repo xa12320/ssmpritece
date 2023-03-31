@@ -22,7 +22,7 @@
     </update>
 
     <!--void addCategory(Category category);-->
-    <insert id="addCategory" parameterType="Category">
-        insert into category values(null,title = #{title},null)
+    <insert id="addCategory" >
+        insert into category values(null,#{title},null)
     </insert>
 </mapper>
